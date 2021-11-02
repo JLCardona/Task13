@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,88 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/heading"
+        android:layout_width="363dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="21dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="Venom: Let There Be Carnage"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="498dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center"
+                android:text="Venom: Let There Be Carnage Becomes Second-Biggest Movie Of 2021"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="144dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                android:autoLink="web"
+                android:text="Venom: Let There Be Carnage has become the second-biggest movie of 2021. A new report from Exhibitor Relations lays out how the Marvel sequel continues to climb this weekend. Buy earning another $5 million, that was enough to leapfrog Black Widow and F9, which sit at $183 million and $173 million respectively. This shouldn't come as a complete shock. Venom's first outing raked in a billion dollars at the box office. There was a clear demand for another movie and the filmmakers delivered more carnage. Tom Hardy and Andy Serkis have been emboldened by Sony's clear desire to bring Spider-Man into contact with the symbiote at some point in the future. (Fans are also reading the tea leaves after everything that has occurred in the marketing for Spider-Man: No Way Home.) It's a new day for the little spinoff that could. No one is thinking that Venom was a one-time fluke now. Sony has built a force to be reckoned with as the series moves forward. Just to put this in perspective, Let There Be Carnage did this without Tom Holland's hero throwing punches. Imagine what the next one will be like. Tom Hardy and Andy Serkis sat down with www.comicbook.com to talk about the future of the series. It's pretty clear that the sky is the limit for the Venomverse. Serkis began, 'A hundred percent. I mean, I think there's so much potential in the Venomverse for really interesting journeys before the kind of the inevitable happens... I think Kelly and Tom have been thinking about what is the next stage of the journey anyway. They would have thought of... They would have had some plans for where they could possibly go after this... You've got to. When you're going into a franchise, you've got to think about the arc, of course. You can't think about them just individually.' In a conversation with IGN, he warned about being too hasty in calling for Spidey. 'Look, it depends when you want to get there, and also, what the appetite is,' Serkis observed. 'If people want more Venom stories, then, to jump straight to Spider-Man, you could be missing out on so many great supervillain characters in between now and then. So, in a way, by rushing to it, you might be closing the door.' "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD COMMENT"
+                android:onClick="button"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
